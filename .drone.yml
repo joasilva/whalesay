@@ -1,0 +1,7 @@
+pipeline:
+  build:
+    image: joasilva/whalesay
+    commands: docker build -t .
+  test:
+    image: joasilva/whalesay 
+    commands: docker run joasilva/whalesay Terve!
